@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 
 export interface ButtonProps {
+  children: React.ReactNode;
   color: string;
-  big: boolean;
 }
 
-export const Button: FC<ButtonProps> = ({ children, color, big, ...props }) => {
-  return <button {...props}>{children}</button>;
+export const Button: FC<ButtonProps> = ({ children, color, ...props }) => {
+  return <button {...props} style={{color}}>{children}</button>;
 };
