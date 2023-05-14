@@ -5,6 +5,8 @@ export interface ButtonProps {
   color: string;
 }
 
-export const Button: FC<ButtonProps> = ({ children, color, ...props }) => {
+const Button: FC<ButtonProps> = ({ children, color, ...props }) => {
   return <button {...props} style={{color}}>{children}</button>;
 };
+
+export default Button;

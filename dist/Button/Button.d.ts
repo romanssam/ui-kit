@@ -3,4 +3,5 @@ export interface ButtonProps {
     children: React.ReactNode;
     color: string;
 }
-export declare const Button: FC<ButtonProps>;
+declare const Button: FC<ButtonProps>;
+export default Button;
